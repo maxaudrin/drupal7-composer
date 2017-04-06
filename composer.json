@@ -26,6 +26,7 @@
       "rm README.md LICENSE .travis.yml phpunit.xml.dist"
     ],
     "post-install-cmd": [
+      "chmod 755 ./scripts/install.sh",
       "./scripts/install.sh"
     ],
     "post-update-cmd": [
