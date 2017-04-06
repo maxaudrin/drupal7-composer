@@ -1,5 +1,5 @@
 {
-  "name": "drupal-composer/drupal-project",
+  "name": "drupal7-composer",
   "description": "Composer template for Drupal projects",
   "repositories": {
     "drupal": {
@@ -9,6 +9,7 @@
   },
   "require": {
     "php": "~5.6.0",
+    "ext-gd": "*",
     "composer/installers": "~1.0",
     "derhasi/composer-preserve-paths": "0.1.*",
     "drupal/drupal": "7.*",
