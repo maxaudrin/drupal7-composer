@@ -22,3 +22,6 @@ composer.lock # remove this in real projects!
 
 # Phpstorm
 .idea
+
+# Docker compose
+docker-compose.yml
