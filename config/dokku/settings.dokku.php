@@ -10,6 +10,8 @@
 $database_url = getenv("DATABASE_URL");
 $components = parse_url($url);
 
+print "Dokku database url: ".$database_url;
+
 if ($components) {
   $host = $components['host'];
   $username = $components['user'];
