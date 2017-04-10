@@ -1,16 +1,14 @@
-<?php
-/**
- * Local settings.
- */
-
-/**
+<?php/**
  * Database settings
- * Dokku retrieves database settings from DATABASE_URL environment variable
+ * Retrieves database settings from DATABASE_URL environment variable
  */
 $database_url = getenv("DATABASE_URL");
-$components = parse_url($url);
+$components = parse_url($database_url);
 
-print "Dokku database url: ".$database_url;
+if (empty($database_url)) {
+  print "No database settings found";
+  exit;
+}
 
 if ($components) {
   $host = $components['host'];
